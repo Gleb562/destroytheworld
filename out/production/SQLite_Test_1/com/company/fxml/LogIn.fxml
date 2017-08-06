@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="362.0" style="-fx-background-color: F6F9CD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controllers.LogInController">
+   <children>
+      <TextField fx:id="txtFieldUserName" layoutX="124.0" layoutY="67.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="txtFieldPassword" layoutX="124.0" layoutY="110.0" prefHeight="25.0" prefWidth="180.0" />
+      <Text layoutX="42.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text layoutX="42.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name:" />
+      <Text layoutX="42.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+      <Button fx:id="btnSignIn" layoutX="251.0" layoutY="160.0" mnemonicParsing="false" onAction="#actionSignIn" text="Sign in" />
+      <Button fx:id="btnRegister" layoutX="149.0" layoutY="160.0" mnemonicParsing="false" onAction="#actionRegister" text="Register" />
+      <Text layoutX="225.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or" />
+      <Text fx:id="txtWrongPass" fill="#eb1c1c" layoutX="31.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong password or User name!" visible="false" />
+   </children>
+</Pane>
